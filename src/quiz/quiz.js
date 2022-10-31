@@ -3,7 +3,8 @@ const prevBtn = document.getElementById('prev-btn')
 const submitBtn = document.getElementById("submit-btn")
 const inputBtn = document.getElementById('input-text')
 const backBtn = document.getElementById('back-btn')
-const questContainerElement = document.getElementById('questionnaire-container')
+const logo = document.getElementById('logo-sec2')
+const questContainerElement = document.getElementById('container-quest')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-btn')
 
@@ -20,10 +21,11 @@ submitBtn.addEventListener('click', () => {
 })
 
 function startGame() {
+  logo.classList.add('hide')
   startBtn.classList.add('hide')
+  questContainerElement.classList.remove('hide')
   listQuestions = questions.sort()
   currentQuestionIndex = 1
-  questContainerElement.classList.remove('hide')
   setNextQuestion()
 }
 
@@ -47,6 +49,10 @@ function showQuestion(question) {
     const button = document.createElement('button')
     button.innerText = answer.text
     button.classList.add('button')
+    var img = document.createElement("img")
+    img.setAttribute("src", answer.img)
+    button.appendChild(img)
+    //button.getElementsByTagName("img").src = "../assets/images/Stomach-2.svg"
     button.addEventListener('click', () => {
       currentQuestionIndex++
       setNextQuestion()
@@ -80,9 +86,9 @@ const questions = [
     question: 'What is your preferred sleep position?',
     answers: [
       { text: 'Stomatch', img: '../assets/images/Stomach-2.svg'},
-      { text: 'Side', img: '../assets/images/back.svg'},
-      { text: 'Back', img: ''},
-      { text: 'Combination', img: ''}
+      { text: 'Side', img: '../assets/images/sleeper-side.svg'},
+      { text: 'Back', img: '../assets/images/back.svg'},
+      { text: 'Combination', img: '../assets/images/combination.svg'}
     ]
   },
   {
@@ -94,7 +100,7 @@ const questions = [
     ]
   },
   {
-    question: 'Is web development funWho will be sleeping on this mattress?',
+    question: 'Who will be sleeping on this mattress?',
     answers: [
       { text: 'Me', img: '' },
       { text: 'Me + Partner', img: '' },

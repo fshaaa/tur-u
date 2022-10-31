@@ -9,25 +9,43 @@
   <title>Choose your Mattres</title>
 </head>
 <body>
-  <div class="section-1">
-    <h3>FIND YOUR</h3>
-    <h2>Mattres Match</h2>
-    <div class="container">
-      <div id="questionnaire-container" class="hide">
-        <div id="question">Question</div>
-        <input type="text" placeholder="Enter your email here" class="hide" id="input-text">
-        <div id="answer-btn" class="btn-grid">
-          <button class="btn">answer-1</button>
-          <button class="btn">answer-2</button>
-          <button class="btn">answer-3</button>
-          <button class="btn">answer-4</button>
+  <div class="container">
+    <div class="section-1">
+      <div class="navbar">
+        <img src="../../assets/images/logo.png" class="logo">
+        <h1>Tur-U</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="#">Browse Mattress</a></li>
+                <li><a href="#">Take The Quiz</a></li>
+                <li><a href="#">Others</a></li>
+            </ul>
+        </nav>
+        <img src="../../assets/images/menu-icon.png" class="menu-icon">
+    </div>
+
+    </div>
+    <div class="section-2">
+      <h1 style="margin: 25px 0 25px 0;">Find your Mattres Match</h1>
+      <button id="start-btn" class="start-btn button">Start</button>
+      <img src="../../assets/images/logo.png" class="logo-sec2" id="logo-sec2">
+      <div id="container-quest" class="quest hide">
+        <div class="questionnaire-container">
+          <div id="question">Question</div>
+          <input type="text" placeholder="  Enter your email here..." class="hide" id="input-text">
+          <div id="answer-btn" class="btn-grid">
+            <button class="btn">answer-1</button>
+            <button class="btn">answer-2</button>
+            <button class="btn">answer-3</button>
+            <button class="btn">answer-4</button>
+          </div>
         </div>
-      </div>
-      <div class="control">
-        <button id="start-btn" class="start-btn button">Start</button>
-        <button id="prev-btn" class="prev-btn btn hide">Previous Question</button>
-        <button id="submit-btn" class="submit-btn btn hide">Submit</button>
-        <button id="back-btn" class="button btn hide" onclick="document.location='../../index.html'">Back to Home</button>
+        <div class="control">
+          <button id="prev-btn" class="prev-btn btn hide">Previous Question</button>
+          <button id="submit-btn" class="submit-btn btn hide">Submit</button>
+          <button id="back-btn" class="button btn hide" onclick="document.location='../../index.html'">Back to Home</button>
+        </div>
       </div>
     </div>
   </div>

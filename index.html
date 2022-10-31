@@ -1,18 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tur-U</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tur-U</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section>
-    <div class="questionnare">
-      <div class="ques-box">
-        <a href="./src/quiz/quiz.html">start</a>
-      </div>
+    <div class="container">
+        <div class="navbar">
+            <img src="./assets/images/logo.png" class="logo">
+            <h1>Tur-U</h1>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Browse Mattress</a></li>
+                    <li><a href="./src/quiz/quiz.html">Take The Quiz</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+            </nav>
+            <img src="./assets/images/menu-icon.png" class="menu-icon">
+        </div>
+
+        <div>
+          <h1>Choose your Best Mattress!!!</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>SPECIAL OFFER</h2>
+                <h3>SleepX Ortho Plus Quilted 6 inch King Mattress</h3>
+                <p>Memory Foam L x W: 72 inch x 70 inch</p>
+                <h3>Rp900.000 40% OFF!</h3><s><h4>Rp1.500.000</h4></s>
+                <button type="button">Buy Now<img src="./assets/images/doublearrow.png">
+                </button>
+            </div>
+            <div class="col-2">
+                <img src="./assets/images/mattress.png" class="mattress">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="./assets/images/plus.png">
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz">
+          <h3 class="mattress">FIND YOUR MATTRESS MATCH</h3>
+          <button class="quiz-button" id="quiz" onclick="document.location='./src/quiz/quiz.html'">Take a Quiz
+            <img src="./assets/images/doublearrow.png">
+          </button>
+        </div>
+
+        <div class="social-links">
+            <img src="./assets/images/fb.png">
+            <img src="./assets/images/tw.png">
+            <img src="./assets/images/ig.png">
+        </div>
     </div>
-  </section>
 </body>
 </html>
