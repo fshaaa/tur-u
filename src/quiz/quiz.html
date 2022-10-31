@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./quiz.css" rel="stylesheet">
+  <script defer src="./quiz.js"></script>
+  <title>Choose your Mattres</title>
+</head>
+<body>
+  <div class="section-1">
+    <h3>FIND YOUR</h3>
+    <h2>Mattres Match</h2>
+    <div class="container">
+      <div id="questionnaire-container" class="hide">
+        <div id="question">Question</div>
+        <input type="text" placeholder="Enter your email here" class="hide" id="input-text">
+        <div id="answer-btn" class="btn-grid">
+          <button class="btn">answer-1</button>
+          <button class="btn">answer-2</button>
+          <button class="btn">answer-3</button>
+          <button class="btn">answer-4</button>
+        </div>
+      </div>
+      <div class="control">
+        <button id="start-btn" class="start-btn button">Start</button>
+        <button id="prev-btn" class="prev-btn btn hide">Previous Question</button>
+        <button id="submit-btn" class="submit-btn btn hide">Submit</button>
+        <button id="back-btn" class="button btn hide" onclick="document.location='../../index.html'">Back to Home</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
